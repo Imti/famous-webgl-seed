@@ -90,7 +90,7 @@ GLThing.prototype.registerFragmentShader = function() {
             return vec4(v_normal + 2.0, 1.0);
         }`;
 
-    Material.registerExpression('glSphereFragment', {
+    Material.registerExpression('glThingFragment', {
         output: 4,
         glsl: 'fragmentMain();',
         defines: fragmentShader
@@ -109,7 +109,7 @@ GLThing.prototype.instantiateVertex = function() {
 };
 
 GLThing.prototype.instantiateFragment = function() {
-    this.fragment = Material.glSphereFragment();
+    this.fragment = Material.glThingFragment();
 };
 
 GLThing.prototype.oscillateOpacity = function() {
