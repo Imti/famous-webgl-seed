@@ -1,3 +1,5 @@
+Personal seed project for WebGL experiments using the Famous Engine.
+
 #Engine-Seed
 > A seed project to get started with the famous engine
 
